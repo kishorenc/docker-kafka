@@ -29,6 +29,9 @@ default.replication.factor=1
 # may not be what you want.
 advertised.host.name={{KAFKA_ADVERTISED_HOST_NAME}}
 
+# Hostname the broker will bind to. If not set, the server will bind to all interfaces
+host.name={{KAFKA_ADVERTISED_HOST_NAME}}
+
 # Enable topic deletion
 delete.topic.enable={{KAFKA_DELETE_TOPIC_ENABLE}}
 
